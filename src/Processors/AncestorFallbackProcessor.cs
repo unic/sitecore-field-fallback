@@ -36,7 +36,7 @@ namespace FieldFallback.Processors
         /// </summary>
         /// <param name="field">The field.</param>
         /// <returns></returns>
-        private Item GetFallbackItem(Field field)
+        protected virtual Item GetFallbackItem(Field field)
         {
             using (new SecurityDisabler())
             {
